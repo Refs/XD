@@ -16,8 +16,8 @@
 > https://www.youtube.com/watch?v=42VCB42TKp4
 
 * 直接向左向右拖动
-* 拖动间距， 调整块与块之间的margin 值
-* 填充图片的时候， 需要去留意 图片的命名顺序
+* 拖动间距， 调整块与块之间的margin 值 ；
+* 填充图片的时候， 需要去留意 图片的命名顺序 (也可以在拖拽之前去选择多张图片， 然后一起拖过去（数量与块的数量要一致）， 主要就是利用多选的方式)
 ![](./images/repeat_grid.jpg)
 
 
@@ -66,5 +66,11 @@ title 的 margin-bottom : 16px
 
 item 外层div height 24px line-height 24px
 item 本身： font-size: 14px
+
+3. 页面之间的分割线 
+
+* 默认黑色
+* 透明度 50%
+* 线宽 0.5px
 
 
