@@ -1,5 +1,7 @@
 # XD
 
+> https://www.youtube.com/watch?v=gjNUwegxn1w
+
 ## panel
 
 1. assets: we set asset panel with colors charactoer, styles, symbols that you can use repeatedly across your document and also edit them and the those particular elements will change right across your whole document . So you may have a hundred page and id you change one of the icons that were changed the color or the size or the shape of it across your the whole document.
@@ -33,8 +35,35 @@
 
 2. 上移与下移动： 上下箭头 一次一个像素  shift + -> 一次10px 
 
-3. alt + 鼠标拖动  拖动复制
+3. 拖动复制: `alt + 鼠标拖动` 
+    *  `shif + alt + 拖动` 精准拖动复制
+
+4. 多选操作： Select multiple items across different groups
+    + Shift+Click allows to select multiple items. 
+    + Cmd+Click allows to select inside a group. 
+    + Cmd+Shift+Click would be nice if it selected items across different groups.
+    + It's very useful to change details (i.e. color) across multiple items inside groups (i.e. icons).
 
 ## 画板选择
 
 刚开始的时候，就应该去选择一个 1920 * 1080 的画板； 这样布局起来，才有参考的意义；
+
+## 常见尺寸(具体的尺寸 可以去实际的参考 已建成的网站)
+
+1. 轮播图的三个点 ： 点一般是10*10的 点与点之间的间距一般是10 opacity: 50% 当前的圆点透明度为 0%  bottom: 30px 
+
+
+2. footer
+
+* footer字体
+
+![](./images/footer_font.jpg)
+
+footer 外层盒子的 上下 padding : 48px;
+title 的 line-height : 24px  font-size: 16px
+title 的 margin-bottom : 16px 
+
+item 外层div height 24px line-height 24px
+item 本身： font-size: 14px
+
+
