@@ -43,6 +43,7 @@
     + Cmd+Click allows to select inside a group. 
     + Cmd+Shift+Click would be nice if it selected items across different groups.
     + It's very useful to change details (i.e. color) across multiple items inside groups (i.e. icons).
+5. 框选操作： 可以进行多选，但是前提是 利用 图层lock 将 下面的 层 锁住， 防止在拖拽的时候， 下面会跟着鼠标错位；
 
 ## 画板选择
 
