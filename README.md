@@ -117,4 +117,8 @@ item 本身： font-size: 14px
 * 透明度 50%
 * 线宽 0.5px
 
+## color gradient
+
+> https://www.youtube.com/watch?v=Dp_b1Foj4_o
+
 
