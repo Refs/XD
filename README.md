@@ -1,5 +1,42 @@
 # XD
 
+## layout 
+
+> the splite of grid in app or website should based on the libray we use;
+
+1. website bootstrap grid
+
+![](./images/bootstrap-grid.png)
+
+```css
+/* difference between the container and container-fluid */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+```
+
+2. app ionic grid
+
+
 > https://www.youtube.com/watch?v=gjNUwegxn1w
 
 ## panel
