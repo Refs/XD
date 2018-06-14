@@ -8,8 +8,10 @@
 
 ![](./images/bootstrap-grid.png)
 
+* difference between the container and container-fluid 
+
 ```css
-/* difference between the container and container-fluid */
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -33,6 +35,11 @@
 }
 
 ```
+
+* 实际的页面布局设置
+
+width: 1920; height ： 1080px;
+columns : 12; Gutter Width: 30; Column Width: 130; margin-left: 15; margin-right: 15px;
 
 2. app ionic grid
 
