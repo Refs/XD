@@ -126,3 +126,12 @@ item 本身： font-size: 14px
 
 > https://www.youtube.com/watch?v=kz6cjeDQuU8
 
+1. illustrator 中的矢量图 我们可以直接采用 ctrl+c 复制，然后在 XD 中粘贴的方式；
+
+## create dash line in Adobe xd  
+
+> 如何在 adobe xd 中 做 点画线  ， 主要使用 repeat grid  , 即 先去画一个点 或者画一个 矩形， 然后 再重复即可；
+
+1. 点画线： 小圆 4*4  repeat margin 8 为圆形直径2倍
+2. 细画线： 矩形 10*4 repeat margin  10 为 矩形等宽
+
