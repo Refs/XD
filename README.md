@@ -135,3 +135,65 @@ item 本身： font-size: 14px
 1. 点画线： 小圆 4*4  repeat margin 8 为圆形直径2倍
 2. 细画线： 矩形 10*4 repeat margin  10 为 矩形等宽
 
+
+If a module provides both providers and declarations (components, directive, pipe) then loading it in a child injector such as a route, would duplicate the provider instance. The duplication of providers would cause issure. For this reason Angular privodes a way to seperate providers out of the module so that same 
+
+For this reason Angular provides a way to separate providers out of the modules so that same module can be imported in to the root module with providers and child modules without providers.
+
+RouterModule needs to provide the Router service, as well as the RouterOutlet directive . RouterModule has to be imported by the root application module so that the application has a Router and the application has at leat on RouterOutlet . It also must be imported by the indivadual route components so that they 
+
+A module that adds providers to the application can offer a facility for configuring those providers as
+
+
+Import CoreModule and use its forRoot() one time , In AppModule, because it registers services and you only want to register those services one time in your app. If you 
+
+```ts
+// user.service.ts
+constructor (@Optional() config: UserServiceConfig) {
+  if (config) (
+    this._userName = config.userName;
+  )
+}
+
+
+static forRoot(config: UserServiceConfig): ModuleWithProviders {
+  return {
+    ngModule: CoreModule,
+    providers: [
+      {provider: UserServiceConfig, useValue: config}
+    ]
+  }
+}
+
+import { CoreModule } from './core/core.module';
+
+@NgModule({
+  imports: [
+    BrowserModule,
+    ContactModule,
+    CoreModule.forRoot({
+      userName: 'Miss Marple'
+    })
+  ]
+})
+
+// By default , the injector throw an error when it can't find a requested provider , 
+
+Angular creates 
+
+```
+
+
+Angular creates a lazy-loaded module with its own injector, a child of the root injetor. @SkipSelf causes Angular to look for a CoreModule in the parent injector, which is the root injector . Of course it finds the 
+
+
+An NgModule describes how the application parts fit together. Every application has at least one Angulae module, the root module that you bootstrap to launch the application. By convention , it's usually called AppModule.
+
+The @NgMoudle decorator identifies AppModule as an NgModule calls . @NgModule takes a metadata object that tells Angular how to compile and launch the application.
+
+
+A provider is an instruction to the DI system on how to obtain a value for a dependency. Most of the time , these dependencies are services that you create and provide.
+
+
+
+
