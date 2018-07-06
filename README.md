@@ -192,7 +192,7 @@ An NgModule describes how the application parts fit together. Every application 
 The @NgMoudle decorator identifies AppModule as an NgModule calls . @NgModule takes a metadata object that tells Angular how to compile and launch the application.
 
 
-A provider is an instruction to the DI system on how to obtain a value for a dependency. Most of the time , these dependencies are services that you create and provide.
+A provider is an instruction to the DI system on how to obtain a value for a dependency. Most of the time , these dependencies are services that you create and provide
 
 
 
